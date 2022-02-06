@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
+import Header from "./components/Header"
+import LogInSignup from "./components/LogInSignup";
 
 function App() {
   return (
     <>
-      <div className=" font-bold text-3xl">Hey there ✋</div>
+    {/* Header */}
+    <Header />
+
+    {/* Show log in or sign page / index page*/}
+    <LogInSignup />
+
     </>
   );
 }
