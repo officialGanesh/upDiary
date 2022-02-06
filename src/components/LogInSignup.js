@@ -3,9 +3,9 @@ import React from 'react';
 function LogInSignup() {
   return(
     <>
-      <div className='mt-36 ml-12 '>
+      <main className='mt-24 ml-12 sm:flex sm:flex-col  lg:block'>
         <div className='text-white text-6xl  font-semibold mb-10 '>Be creative. <br /> Write something.</div> 
-        <div className='p-4 max-w-2xl  bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
+        <div className='p-4 max-w-3xl  bg-white rounded-lg border shadow-md sm:p-8 dark:bg-gray-800 dark:border-gray-700'>
           <form className='space-y-8'>
           <h3 className="text-xl font-medium text-gray-900 dark:text-white">Sign in to our platform</h3>
           <div>
@@ -21,10 +21,10 @@ function LogInSignup() {
           
           </form>
         </div>
-        <div className='float-right inline -mt-[41rem] mr-12'>
+        <div className='lg:float-right inline sm:float-none   -mt-[41rem] mr-12 '>
           <img src="/imgs/clip-writer.png" alt="logo" className='object-contain '/>  
         </div>        
-      </div>
+      </main>
     </>
   );
 }
