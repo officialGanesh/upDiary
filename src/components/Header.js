@@ -1,24 +1,33 @@
 import React from 'react';
 import HeaderItem from './HeaderItem';
-
+import { Link } from "react-router-dom"
+import { auth } from '../Firebase-config';
 import {
     HomeIcon,
     LogoutIcon,
-    PaperAirplaneIcon,
     PlusCircleIcon,
     UserCircleIcon
 }from "@heroicons/react/outline"
+import { signOut } from 'firebase/auth';
 
-function Header() {
+
+function Header({ setIsAuth }) {
+
+  
+  const logOutUser = () => {
+    signOut(auth)
+    localStorage.clear()
+    setIsAuth(false)
+  } 
+
   return(
       <>
         <header className='flex flex-col sm:flex-row m-5 justify-center items-center h-auto'>
             <div className='flex flex-grow justify-evenly max-w-2xl'>
-                <HeaderItem title="HOME" Icon={HomeIcon}/>
-                <HeaderItem title="CREATE" Icon={PlusCircleIcon}/>
-                <HeaderItem title="YOURBLOGS" Icon={PaperAirplaneIcon}/>
-                <HeaderItem title="LOGOUT" Icon={LogoutIcon}/>
-                <HeaderItem title="PROFILE" Icon={UserCircleIcon}/>
+              <Link to="/home"><HeaderItem title="HOME" Icon={HomeIcon}/></Link>
+              <Link to="/createblog"><HeaderItem title="CREATE" Icon={PlusCircleIcon}/></Link>
+              <Link to="/" onClick={logOutUser}><HeaderItem title="LOGOUT" Icon={LogoutIcon}/></Link>
+              <Link to="/dashboard"><HeaderItem title="PROFILE" Icon={UserCircleIcon}/></Link>
             </div>
         </header>
       </>
