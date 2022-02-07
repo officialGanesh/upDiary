@@ -1,5 +1,6 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import CardBlog from '../components/CardBlog';
+
 import Header from '../components/Header';
 
 function Home({ setIsAuth }) {
@@ -8,8 +9,8 @@ function Home({ setIsAuth }) {
   return (
       <>
       <Header setIsAuth={setIsAuth} />
-
-      <Footer />
+      <CardBlog />
+      
       </>
   );
 }

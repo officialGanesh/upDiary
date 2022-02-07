@@ -22,7 +22,7 @@ function Header({ setIsAuth }) {
 
   return(
       <>
-        <header className='flex flex-col sm:flex-row m-5 justify-center items-center h-auto'>
+        <header className='flex flex-col sm:flex-row m-5 justify-center items-center h-auto my-10'>
             <div className='flex flex-grow justify-evenly max-w-2xl'>
               <Link to="/home"><HeaderItem title="HOME" Icon={HomeIcon}/></Link>
               <Link to="/createblog"><HeaderItem title="CREATE" Icon={PlusCircleIcon}/></Link>

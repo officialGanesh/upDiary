@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../components/Footer';
+import CreateCard from '../components/CreateCard';
 import Header from '../components/Header';
 
 function CreateBlog() {
@@ -7,7 +7,8 @@ function CreateBlog() {
       <>
       <Header />
 
-      <Footer />
+      <CreateCard />
+      
       </>
   );
 }

@@ -14,8 +14,7 @@ import {
 function App() {
 
   const [isAuth, setIsAuth] = useState(false)
-
-
+  
   return (
     <>
       <Router>
@@ -24,7 +23,7 @@ function App() {
             <Route path="/" element={<UserAuth setIsAuth={setIsAuth} />}/>:
             <>
             <Route path="/home" element={<Home />}/>
-            <Route path="/dashboard" element={<DashBoard />}/>
+            <Route path="/dashboard" element={<DashBoard/>}/>
             <Route path="/createblog" element={<CreateBlog />}/>
             <Route path="*" element={<Error />}/>
             </>

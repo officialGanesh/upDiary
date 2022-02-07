@@ -18,7 +18,7 @@ function UserAuth({ setIsAuth }) {
         setIsAuth(true)
         localStorage.setItem("isAuth", true)
         navigate("/home")
-                
+        
       }).catch(err=>console.log(err))
 
     } catch (error) {
