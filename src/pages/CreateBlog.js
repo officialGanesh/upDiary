@@ -6,7 +6,7 @@ function CreateBlog() {
   return (
       <>
       <Header />
-
+      
       <CreateCard />
       
       </>
