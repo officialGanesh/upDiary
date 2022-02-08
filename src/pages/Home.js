@@ -1,39 +1,38 @@
-import React, { useState, useEffect } from 'react';
-import CardBlog from '../components/CardBlog';
-import Header from '../components/Header';
-import { colRef } from '../Firebase-config';
-import { onSnapshot, orderBy, query } from 'firebase/firestore';
+import React, { useState, useEffect } from "react";
+import CardBlog from "../components/CardBlog";
+import Header from "../components/Header";
+import { colRef } from "../Firebase-config";
+import { onSnapshot, orderBy, query } from "firebase/firestore";
 
 function Home({ setIsAuth }) {
-
-  const [blogs, setBlogs] = useState([])
+  const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
     const getBlogs = async () => {
-
-          const q = query(colRef, orderBy("createdAt"))
-          onSnapshot(q, (snapshot)=>
-          setBlogs(snapshot.docs.map((doc) => ({...doc.data(),id:doc.id}))))
+      const q = query(colRef, orderBy("createdAt"));
+      onSnapshot(q, (snapshot) =>
+        setBlogs(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+      );
     };
 
-    getBlogs()
-    }, [])
-    
-    
+    getBlogs();
+  }, []);
+
   return (
-      <>
+    <>
       <Header setIsAuth={setIsAuth} />
 
-      {
-        blogs.map((blog) => {
-          return (
-
-            <CardBlog title={blog.title} desc={blog.desc} />
-          )
-        })
-      }
-      
-      </>
+      {blogs.map((blog) => {
+        return (
+          <CardBlog
+            title={blog.title}
+            desc={blog.desc}
+            id={blog.id}
+            authorId={blog.authorId}
+          />
+        );
+      })}
+    </>
   );
 }
 
