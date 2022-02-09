@@ -1,7 +1,6 @@
-# upDiary : Write your blog to show others
+# upDiary : be creative 
 
-upDiary is a blog app which provides user to post their blog online
-
+upDiary is a blog app created using reactjs and firebase
 
 ## Tech Stack
 
@@ -47,16 +46,16 @@ Start the server
 
 ## Screenshots
 ### Log-in or Sign-up page
-![User-auth](public\imgs\login.png)
+![User-auth](../updiary/public/imgs/login.png)
 
 ### Home page
-![Home] (public\imgs\home.png)
+![Home] (../updiary/public/imgs/home.png)
 
 ### Create page
-![Home] (public\imgs\create.png)
+![Create-post] (../updiary/public/imgs/create.png)
 
 ### Profile page
-![Home] (public\imgs\profile.png)
+![Profile] (../updiary/public/imgs/profile.png)
 
 ### Error page
-![Home] (public\imgs\error.png)
+![Error] (../updiary/public/imgs/error.png) 
