@@ -45,8 +45,9 @@ Start the server
 
 
 ## Screenshots
+
 ### Log-in or Sign-up page
-![User-auth](../updiary/public/imgs/login.png)
+![User-auth](https://github.com/officialGanesh/upDiary/blob/main/public/imgs/create.png)
 
 ### Home page
 ![Home] (../updiary/public/imgs/home.png)
