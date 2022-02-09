@@ -50,13 +50,13 @@ Start the server
 ![User-auth](https://github.com/officialGanesh/upDiary/blob/main/public/imgs/create.png)
 
 ### Home page
-![Home] (../updiary/public/imgs/home.png)
+![Home] (https://github.com/officialGanesh/upDiary/blob/main/public/imgs/home.png)
 
 ### Create page
-![Create-post] (../updiary/public/imgs/create.png)
+![Create-post] (https://github.com/officialGanesh/upDiary/blob/main/public/imgs/create.png)
 
 ### Profile page
-![Profile] (../updiary/public/imgs/profile.png)
+![Profile] (https://github.com/officialGanesh/upDiary/blob/main/public/imgs/profile.png)
 
 ### Error page
-![Error] (../updiary/public/imgs/error.png) 
+![Error] (https://github.com/officialGanesh/upDiary/blob/main/public/imgs/error.png) 
