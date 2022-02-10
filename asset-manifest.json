@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/upDiary/static/css/main.43840925.css",
+    "main.js": "/upDiary/static/js/main.9614c3d9.js",
+    "index.html": "/upDiary/index.html",
+    "main.43840925.css.map": "/upDiary/static/css/main.43840925.css.map",
+    "main.9614c3d9.js.map": "/upDiary/static/js/main.9614c3d9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43840925.css",
+    "static/js/main.9614c3d9.js"
+  ]
+}
